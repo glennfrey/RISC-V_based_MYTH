@@ -95,6 +95,7 @@ Labs question:
 ```ans. Sum of numbers from 1 to 9 is 45```
 ![](risc-v/rv-assd1labq8.png)
 ## Part3 Integer number representation
+Labs question:
 In this lab u need to cast ```unsigned long long int``` before the pow function. To resolve the variable limitation of int.
 ![](risc-v/rv-assd1lab2q4.png)
 4)   Modify the unsignedHighest.c program to display highest and lowest 64-bit signed integers. Debug using spike. Run until PC is 100d8. What message gets printed at this point?
@@ -112,6 +113,7 @@ An Application Binary Interface is a set of rules enforced by the Operating Syst
 So, it is system call interface used by the application program to access the registers specific to architecture. Overhere the architecture is RISC-V, so to access 32 registers of RISC-V below is the table which shows the calling convention (ABI name) given to registers for the application programmer to use.
 ![](risc-v/rv-day2lec.png)
 ## Part2 Lab work using ABI function calls
+Labs question:
 1)   Modify 1to9_custom.c and load.S as shown in video. What is the output of simulation with -Ofast ?
 ```ans. Sum of number from 1 to 9 is 45```
 ![](risc-v/rv-day2lab.png)
@@ -129,6 +131,7 @@ So, it is system call interface used by the application program to access the re
 ```ans. 0x0 and 0xa```
 ![](risc-v/rv-day2labass2q4and5ans.png)
 ## Part3 Basic verification flow using iverilog
+Labs question:
 1)   Git clone riscv\_workshop\_collaterals as shown in video. What is the value of mabi and march in rv32im.sh script for 1to9_custom.c riscv gcc command?
 ![](risc-v/rv-day2labass3labs.png)
 To answer this question first we need to clone to link for github workshops collateral as shown above. Then open labs folder.
