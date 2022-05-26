@@ -18,7 +18,7 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
   * [Part 7: Circuit design simulation tool Ngspice Setup](#Part7-Circuit-design-simulation-tool-Ngspice-Setup)
   * [Part 8: Layout design tool Magic Setup](#Part8-Layout-design-tool-Magic-Setup)
  
-- [Day 2: PLL Labs and post-layout simulations](#Day2)
+ [Day 2: PLL Labs and post-layout simulations](#Day2)
   * [Part 9: PLL components circuit design](#Part9-PLL-components-circuit-design)
   * [Part 10: PLL components circuit simulations](#Part10-PLL-components-circuit-simulations)
   * [Part 11: Steps to combine PLL sub-circuits and PLL full design simulation](#Part11-Steps-to-combine-PLL-subcircuits-and-PLL-full-design-simulation)
