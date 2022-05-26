@@ -36,10 +36,33 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
   * [Part 4: Wrap-up and future opportunities](#Part4-Wrap-up-and-future-opportunities)
   
 ## Day1
+
 ## Part1 Introduction to RISC-V basic keywords
+![](risc-v/rv-day1lec1.png)
+![](risc-v/rv-day1lec2.png)
+![](risc-v/rv-day1lec3.png)
 ## Part2 Labwork for RISC-V software toolchain
+![](risc-v/rv-assd1lab1.png)
+![](risc-v/rv-assd1labprintf1.png)
+![](risc-v/rv-assd1labq3.pngg)
+![](risc-v/rv-assd1labq4.pngg)
+![](risc-v/rv-assd1labq5.pngg)
+![](risc-v/rv-assd1labq6.png)
+![](risc-v/rv-assd1labq7.png)
+![](risc-v/rv-assd1labq8.png)
 ## Part3 Integer number representation
+![](risc-v/rv-assd1lab2q4ans.png)
+![](risc-v/rv-assd1lab2q5ans.png)
+
 ## Day2
+
 ## Part1 Application Binary interface (ABI)
+![](risc-v/rv-day2lec.png)
 ## Part2 Lab work using ABI function calls
+![](risc-v/rv-day2labass3labs1.png)
+![](risc-v/rv-day2lab.png)
+![](risc-v/rv-day2labq2.png)
+![](risc-v/rv-day2labq3.png)
+![](risc-v/rv-day2labass2q4and5ans.png)
 ## Part3 Basic verification flow using iverilog
+![](risc-v/rv-day2ass3labq1ans.png)
