@@ -48,7 +48,7 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
 ![](risc-v/rv-assd1labq4.png)
 ![](risc-v/rv-assd1labq5.png)
 ![](risc-v/rv-assd1labq6.png)
-![](risc-v/rv-assd1labq7.png)
+![](rv-day1ass2q7ans.png)
 ![](risc-v/rv-assd1labq8.png)
 ## Part3 Integer number representation
 ![](risc-v/rv-assd1lab2q4.png)
