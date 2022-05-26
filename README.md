@@ -13,17 +13,16 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
   * [Part 2: Labwork for RISC-V software toolchain](#Part2-Labwork-for-RISC-V-software-toolchain)
   * [Part 3: Integer number representation](#Part3-Integer-number-representation)
  
- [Day 2: PLL Labs and post-layout simulations](#Day2)
-  * [Part 9: PLL components circuit design](#Part9-PLL-components-circuit-design)
-  * [Part 10: PLL components circuit simulations](#Part10-PLL-components-circuit-simulations)
-  * [Part 11: Steps to combine PLL sub-circuits and PLL full design simulation](#Part11-Steps-to-combine-PLL-subcircuits-and-PLL-full-design-simulation)
-  * [Part 12: Troubleshooting steps](#Part12-Troubleshooting-steps)
-  * [Part 13: Layout design](#Part13-Layout-design)
-  * [Part 14: Layout Walkthrough](#Part14-Layout-Walkthrough)
-  * [Part 15: Parasitic Extraction](#Part15-Parasitic-Extraction)
-  * [Part 16: Post Layout simulations](#Part16-Post-Layout-simulations)
-  * [Part 17: Steps to combine layouts](#Part17-Steps-to-combine-layouts)
-  * [Part 18: Tapeout theory](#Part18-Tapeout-theory)
-  * [Part 19: Tapeout labs](#Part19-Tapeout-labs)
+ [Day 2: Introduction to ABI and basic verification flow](#Day2)
+  * [Part 1: Application Binary interface (ABI)](#Part1-Application-Binary-Interface-ABI)
+  * [Part 2: Lab work using ABI function calls](#Part2-Lab-work-using-ABI-function-calls)
+  * [Part 3: Basic verification flow using iverilog](#Part3-Basic-verification-flow-using-iverilog)
 
 ## Day1
+## Part 1: Introduction to RISC-V basic keywords
+## Part 2: Labwork for RISC-V software toolchai
+## Part 3: Integer number representation
+## Day2
+## Part 1: Application Binary interface (ABI)
+## Part 2: Lab work using ABI function calls
+## Part 3: Basic verification flow using iverilog
