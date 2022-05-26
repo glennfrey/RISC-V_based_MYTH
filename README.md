@@ -3,7 +3,7 @@ RISC-V based MYTH
 
 ![](risc-v/risc-v_banner.png)
 ### ABOUT THE WORKSHOP
-The Workshop is a 5-day basic to advance program that is design for fresher who wants to build a career in VLSI industry. It is a cloud based workshop that comprises of training courses that covers RTL to GDS topics, labs, intelligent assessment program, and documentation to be presented in github which may serve as a resume.
+The Workshop is a 5-day basic to advance program that is design for fresher and professional who wants to build a career in VLSI industry. It is a cloud based workshop that comprises of training courses that covers RISC-V specs, RISC-V software, How to implement RISC-V basic specs using TL-Verilog and Simulate your own RISC-V core. In short, you are going to write RTL and build RISC-V core on your own.
 ### AUTHOR OF THE WORKSHOP
 #### Mr. Kunal Ghosh
 Co-founder of VLSI System Design (VSD) Corporation Private Limited
