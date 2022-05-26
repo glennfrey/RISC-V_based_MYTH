@@ -72,7 +72,7 @@ Once done with installation add the PATH to .bashrc file for future use.
 Labs question:
 1)   For the C program used in labs, use a value of n=9, compile and simulate using gcc compiler. What is the output you get?
 ```ans. 45```
-![](risc-v/rv-assd1lab1.png)
+![](rv-day1ass1q1ans.png)
 2)   As shown in labs, compile the C program (n=9) using riscv-gcc compiler with O1 switch and look at assembly code using riscv-objdmp. What is the memory location of "printf" subroutine ?
 ```ans. 10408```
 ![](risc-v/rv-assd1labprintf1.png)
