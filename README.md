@@ -38,26 +38,78 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
 ## Day1
 
 ## Part1 Introduction to RISC-V basic keywords
+A RISC-V ISA is defined as a base integer ISA, which must be present in any implementation, plus optional extensions to the base ISA. Each base integer instruction set is characterized by
+- Width of the integer registers (XLEN)
+- Corresponding size of the address space
+- Number of integer registers (32 in RISC-V)
+More details on RISC-V ISA can be obtained here.
+Overview of GNU compiler toolchain
+The GNU Toolchain is a set of programming tools in Linux systems that programmers can use to make and compile their code to produce a program or library. So, how the machine code which is understandable by processer is explained below.
+* Preprocessor - Process source code before compilation. Macro definition, file inclusion or any other directive if present then are preprocessed.
+* Compiler - Takes the input provided by preprocessor and converts to assembly code.
+* Assembler - Takes the input provided by compiler and converts to relocatable machine code.
+* Linker - Takes the input provided by Assembler and converts to Absolute machine code.
+Under the risc-v toolchain,
+To use the risc-v gcc compiler use the below command:
+```riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o <object filename> <C filename>```
+More generic command with different options:
+```riscv64-unknown-elf-gcc <compiler option -O1 ; Ofast> <ABI specifier -lp64; -lp32; -ilp32> <architecture specifier -RV64 ; RV32> -o <object filename> <C filename>```
+More details on compiler options can be obtained here
+To view assembly code use the below command,
+```riscv64-unknown-elf-objdump -d <object filename>```
+To use SPIKE simualtor to run risc-v obj file use the below command,
+```spike pk <object filename>```
+To use SPIKE as debugger
+```spike -d pk <object Filename>``` with degub command as ```until pc 0 <pc of your choice>```
+To install complete risc-v toolchain locally on linux machine,
+- RISC-V GNU Toolchain
+- RISC-V ISA SImulator - Spike
+Once done with installation add the PATH to .bashrc file for future use.
 ![](risc-v/rv-day1lec1.png)
 ![](risc-v/rv-day1lec2.png)
 ![](risc-v/rv-day1lec3.png)
 ## Part2 Labwork for RISC-V software toolchain
+Labs question:
+1)   For the C program used in labs, use a value of n=9, compile and simulate using gcc compiler. What is the output you get?
+```ans. 45```
 ![](risc-v/rv-assd1lab1.png)
+2)   As shown in labs, compile the C program (n=9) using riscv-gcc compiler with O1 switch and look at assembly code using riscv-objdmp. What is the memory location of "printf" subroutine ?
+```ans. 10408```
 ![](risc-v/rv-assd1labprintf1.png)
+3)   How many instructions are used in "printf" subroutine for C program (n=9) compiled with riscv-gcc and O1 switch?
+```ans. 21```
 ![](risc-v/rv-assd1labq3.png)
+4)   As shown in labs, compile the C program (n=9) using riscv-gcc compiler with Ofast switch and look at assembly code using riscv-objdmp. How many instructions are used by "main" program ?
+```ans. 11```
 ![](risc-v/rv-assd1labq4.png)
+5)   Debug C program (n=9) with spike and run until PC is 100b0. What are the contents of register a0?
+```ans. 1```
 ![](risc-v/rv-assd1labq5.png)
+6)   Debug C program (n=9) with spike and run until PC is 100b0. What are the contents of register sp?
+```ans. 0x0000003ffffffb40```
 ![](risc-v/rv-assd1labq6.png)
+7)   Debug C program (n=9) with spike and run until PC is 100c4. What are the contents of register a0?
+```ans. 21180```
 ![](rv-day1ass2q7ans.png)
+8)   Debug C program (n=9) with spike and run until PC is 100dc. What is the output on shell?
+```ans. Sum of numbers from 1 to 9 is 45```
 ![](risc-v/rv-assd1labq8.png)
 ## Part3 Integer number representation
+In this lab u need to cast ```unsigned long long int``` before the pow function. To resolve the variable limitation of int.
 ![](risc-v/rv-assd1lab2q4.png)
+4)   Modify the unsignedHighest.c program to display highest and lowest 64-bit signed integers. Debug using spike. Run until PC is 100d8. What message gets printed at this point?
+```ans. highest number represented by signed long long int ...```
+```highest number represented by signed long long int is 9223362036854775807 and lowest number represented by signed long long int is -9223362036854775808```
 ![](risc-v/rv-assd1lab2q4ans.png)
+5)   Modify the unsignedHighest.c program to display highest and lowest 64-bit signed integers. View the assembly code using riscv-objdmp. What is the address location of "printf" subroutine ?
+```ans. 10420```
 ![](risc-v/rv-assd1lab2q5ans.png)
 
 ## Day2
 
 ## Part1 Application Binary interface (ABI)
+An Application Binary Interface is a set of rules enforced by the Operating System on a specific architecture. So, Linker converts relocatable machine code to absolute machine code via ABI interface specific to the architecture of machine.
+So, it is system call interface used by the application program to access the registers specific to architecture. Overhere the architecture is RISC-V, so to access 32 registers of RISC-V below is the table which shows the calling convention (ABI name) given to registers for the application programmer to use.
 ![](risc-v/rv-day2lec.png)
 ## Part2 Lab work using ABI function calls
 ![](risc-v/rv-day2labass3labs1.png)
