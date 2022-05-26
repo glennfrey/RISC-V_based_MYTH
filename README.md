@@ -112,10 +112,21 @@ An Application Binary Interface is a set of rules enforced by the Operating Syst
 So, it is system call interface used by the application program to access the registers specific to architecture. Overhere the architecture is RISC-V, so to access 32 registers of RISC-V below is the table which shows the calling convention (ABI name) given to registers for the application programmer to use.
 ![](risc-v/rv-day2lec.png)
 ## Part2 Lab work using ABI function calls
-![](risc-v/rv-day2labass3labs1.png)
+1)   Modify 1to9_custom.c and load.S as shown in video. What is the output of simulation with -Ofast ?
+```ans. Sum of number from 1 to 9 is 45```
 ![](risc-v/rv-day2lab.png)
+![](risc-v/rv-day2labass3labs1.png)
+2)   What is the memory location of load subroutine?
+```ans. 101bc```
 ![](risc-v/rv-day2labq2.png)
+3)   What is the memory location of loop subroutine?
+```ans. 101c8```
 ![](risc-v/rv-day2labq3.png)
+4)   Open spike debugger and run 1to9_custom.o until PC is 100b0. What is the value of a0 and a1 registers?
+```ans. 1 and 3ffffffb58```
+![](risc-v/rv-day2labass2q4and5ans.png)
+5)   Open spike debugger and run 1to9_custom.o until PC is 100bc. What is the value of a0 and a1 registers?
+```ans. 0x0 and 0xa```
 ![](risc-v/rv-day2labass2q4and5ans.png)
 ## Part3 Basic verification flow using iverilog
 ![](risc-v/rv-day2labass3labs.png)
