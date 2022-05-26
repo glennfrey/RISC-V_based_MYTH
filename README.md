@@ -44,13 +44,14 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
 ## Part2 Labwork for RISC-V software toolchain
 ![](risc-v/rv-assd1lab1.png)
 ![](risc-v/rv-assd1labprintf1.png)
-![](risc-v/rv-assd1labq3.pngg)
-![](risc-v/rv-assd1labq4.pngg)
-![](risc-v/rv-assd1labq5.pngg)
+![](risc-v/rv-assd1labq3.png)
+![](risc-v/rv-assd1labq4.png)
+![](risc-v/rv-assd1labq5.png)
 ![](risc-v/rv-assd1labq6.png)
 ![](risc-v/rv-assd1labq7.png)
 ![](risc-v/rv-assd1labq8.png)
 ## Part3 Integer number representation
+![](risc-v/rv-assd1lab2q4.png)
 ![](risc-v/rv-assd1lab2q4ans.png)
 ![](risc-v/rv-assd1lab2q5ans.png)
 
