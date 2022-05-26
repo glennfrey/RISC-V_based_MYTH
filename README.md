@@ -9,7 +9,7 @@ The Workshop is a 5-day basic to advance program that is design for fresher who 
 Co-founder of VLSI System Design (VSD) Corporation Private Limited
 ### AGENDA
  [Day 1 : Introduction to RISC-V ISA and GNU compiler toolchainp](#Day1)
-  * [Part 1: Introduction to RISC-V basic keywords](#Introduction-to-RISC-V-basic-keywords)
+  * [Part 1: Introduction to RISC-V basic keywords](#Part1-Introduction-to-RISC-V-basic-keywords)
   * [Part 2: Labwork for RISC-V software toolchain](#Part2-Labwork-for-RISC-V-software-toolchain)
   * [Part 3: Integer number representation](#Part3-Integer-number-representation)
  
@@ -19,10 +19,10 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
   * [Part 3: Basic verification flow using iverilog](#Part3-Basic-verification-flow-using-iverilog)
 
 ## Day1
-## Part 1: Introduction to RISC-V basic keywords
-## Part 2: Labwork for RISC-V software toolchai
-## Part 3: Integer number representation
+## Part1 Introduction to RISC-V basic keywords
+## Part2 Labwork for RISC-V software toolchai
+## Part3 Integer number representation
 ## Day2
-## Part 1: Application Binary interface (ABI)
-## Part 2: Lab work using ABI function calls
-## Part 3: Basic verification flow using iverilog
+## Part1 Application Binary interface (ABI)
+## Part2 Lab work using ABI function calls
+## Part3 Basic verification flow using iverilog
