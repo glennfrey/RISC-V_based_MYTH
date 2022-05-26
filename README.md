@@ -129,9 +129,13 @@ So, it is system call interface used by the application program to access the re
 ```ans. 0x0 and 0xa```
 ![](risc-v/rv-day2labass2q4and5ans.png)
 ## Part3 Basic verification flow using iverilog
+1)   Git clone riscv\_workshop\_collaterals as shown in video. What is the value of mabi and march in rv32im.sh script for 1to9_custom.c riscv gcc command?
 ![](risc-v/rv-day2labass3labs.png)
+To answer this question first we need to clone to link for github workshops collateral as shown above. Then open labs folder.
 ![](risc-v/rv-day2labass3labs1.png)
+Once your in the labs folder use command```chmod 777 rv32im.sh``` to acquire previlege access to the file rv32im.sh. To envole the shell script file use command ```./rv32im.sh```. A file will be generated as shown  above. Example files are .o, hex files etc. In this file use vim or less application to open the file rv32im.sh
 ![](risc-v/rv-day2ass3labq1ans.png)
+Finally the answer is ```.ans ilp32 and rv32im``` as highlighted above.
 
 ## Day3
 ## Day4
