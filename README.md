@@ -8,7 +8,7 @@ The Workshop is a 5-day basic to advance program that is design for fresher who 
 #### Mr. Kunal Ghosh
 Co-founder of VLSI System Design (VSD) Corporation Private Limited
 ### AGENDA
- - [Day 1: PLL Theory and Lab setup](#Day1)
+ [Day 1: PLL Theory and Lab setup](#Day1)
   * [Part 1: Introduction to PLL](#Part1-Introduction-to-PLL)
   * [Part 2: Introduction to Phase Frequency Detector](#Part2-Introduction-to-Phase-Frequency-Detector)
   * [Part 3: Introduction to Charge Pump](#Part3-Introduction-to-Charge-Pump)
