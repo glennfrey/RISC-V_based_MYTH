@@ -66,6 +66,8 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
 ![](risc-v/rv-day2labq3.png)
 ![](risc-v/rv-day2labass2q4and5ans.png)
 ## Part3 Basic verification flow using iverilog
+![](risc-v/rv-day2labass3labs.png)
+![](risc-v/rv-day2labass3labs1.png)
 ![](risc-v/rv-day2ass3labq1ans.png)
 
 ## Day3
