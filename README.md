@@ -17,6 +17,7 @@ Co-founder of VLSI System Design (VSD) Corporation Private Limited
   * [Part 6: Introduction to PDK, specifications and pre-layout circuits](#Part6-Introduction-to-PDK-specifications-and-pre-layout-circuits)
   * [Part 7: Circuit design simulation tool Ngspice Setup](#Part7-Circuit-design-simulation-tool-Ngspice-Setup)
   * [Part 8: Layout design tool Magic Setup](#Part8-Layout-design-tool-Magic-Setup)
+ 
 - [Day 2: PLL Labs and post-layout simulations](#Day2)
   * [Part 9: PLL components circuit design](#Part9-PLL-components-circuit-design)
   * [Part 10: PLL components circuit simulations](#Part10-PLL-components-circuit-simulations)
