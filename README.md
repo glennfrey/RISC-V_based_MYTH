@@ -65,9 +65,7 @@ To install complete risc-v toolchain locally on linux machine,
 - RISC-V GNU Toolchain
 - RISC-V ISA SImulator - Spike
 Once done with installation add the PATH to .bashrc file for future use.
-![](risc-v/rv-day1lec1.png)
-![](risc-v/rv-day1lec2.png)
-![](risc-v/rv-day1lec3.png)
+
 ## Part2 Labwork for RISC-V software toolchain
 Labs question:
 1)   For the C program used in labs, use a value of n=9, compile and simulate using gcc compiler. What is the output you get?
@@ -111,7 +109,7 @@ In this lab u need to cast ```unsigned long long int``` before the pow function.
 ## Part1 Application Binary interface (ABI)
 An Application Binary Interface is a set of rules enforced by the Operating System on a specific architecture. So, Linker converts relocatable machine code to absolute machine code via ABI interface specific to the architecture of machine.
 So, it is system call interface used by the application program to access the registers specific to architecture. Overhere the architecture is RISC-V, so to access 32 registers of RISC-V below is the table which shows the calling convention (ABI name) given to registers for the application programmer to use.
-![](risc-v/rv-day2lec.png)
+
 ## Part2 Lab work using ABI function calls
 Labs question:
 1)   Modify 1to9_custom.c and load.S as shown in video. What is the output of simulation with -Ofast ?
