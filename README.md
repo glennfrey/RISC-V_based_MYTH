@@ -139,5 +139,32 @@ Once your in the labs folder use command```chmod 777 rv32im.sh``` to acquire pre
 Finally the answer is ```.ans ilp32 and rv32im``` as highlighted above.
 
 ## Day3
+![](rvday3/rv-day3ass1q3.png)
+![](rvday3/rv-day3lab1and.png)
+![](rvday3/rv-day3lab1combinationalcalc.png)
+![](rvday3/rv-day3lab1counter.png)
+![](rvday3/rv-day3lab1febonacciseq.png)
+![](rvday3/rv-day3lab1inverter.png)
+![](rvday3/rv-day3lab1mux.png)
+![](rvday3/rv-day3lab1vector.png)
+![](rvday3/rv-day3lab1vector.png)
+![](rvday3/rv-day3lab3counterandcalcpipeline.png)
+![](rvday3/rv-day3lab3counterandcalcpipeline2.png)
+![](rvday3/rv-day3lab3pipeline.png)
+![](rvday3/rv-day3lab3validity_2cyclecalcwithvalidity.png)
+![](rvday3/rv-day3lab3validity_calcwithcvmemory.png)
+![](rvday3/rv-day3lab3validity_squareroot.png)
+
 ## Day4
+![](rvday4/rv-day3lab_branch.png)
+![](rvday4/rv-day3lab_decode.png)
+![](rvday4/rv-day3lab_decodeviz.png)
+![](rvday4/rv-day3lab_decodewaveform.png)
+![](rvday4/rv-day3lab_fetch.png)
+![](rvday4/rv-day3lab_nextpc.png)
+![](rvday4/rv-day3lab_rfread.png)
+![](rvday4/rv-day3lab_rfviz.png)
+![](rvday4/rv-day3lab_rfwrite.png)
+![](rvday4/rv-day3lab_write.png)
+
 ## Day5
