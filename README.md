@@ -173,5 +173,5 @@ Finally the answer is ```.ans ilp32 and rv32im``` as highlighted above.
 ![](rvday5/rv-day5waveform2.png)
 ![](rvday5/rv-day5waveform3.png)
 ![](rvday5/rv-day5waveform4.png)
-![](rvday5/rv-day5waveform.gif)
+![](rvday5/rvday5viz.gif)
 
