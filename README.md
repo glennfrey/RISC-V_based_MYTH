@@ -168,3 +168,10 @@ Finally the answer is ```.ans ilp32 and rv32im``` as highlighted above.
 ![](rvday4/rv-day3lab_write.png)
 
 ## Day5
+![](rvday5/rv-day5diagram.png)
+![](rvday5/rv-day5waveform.png)
+![](rvday5/rv-day5waveform2.png)
+![](rvday5/rv-day5waveform3.png)
+![](rvday5/rv-day5waveform4.png)
+![](rvday5/rv-day5waveform.gif)
+
