@@ -177,8 +177,11 @@ Here we are task to code the diagram as shown. Here I was able to replicate the 
 ![](rvday3/rv-day3lab3pipeline.png)
 
 ## Part3-Validity
+In this lab we try to implement squareroot and using validity.
 ![](rvday3/rv-day3lab3validity_squareroot.png)
+This is a build up of calculator from the previous lab and we are using validity function here as shown the waveform change to show valid signals.
 ![](rvday3/rv-day3lab3validity_calcwithcvmemory.png)
+Here we implement the 2 cycle calculator with validity.
 ![](rvday3/rv-day3lab3validity_2cyclecalcwithvalidity.png)
 
 ## Day4
@@ -286,8 +289,8 @@ Below is Screenshot of Complete Pipelined RISC-V CPU.
 
 ## Acknowledgement
 
-Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.
-Steve Hoover, Founder, Redwood EDA
-Shivam Potdar, GSoC 2020 @fossi-foundation
-Vineet Jain, GSoC 2020 @fossi-foundation
-Shivani Shah
+- Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.
+- Steve Hoover, Founder, Redwood EDA
+- Shivam Potdar, GSoC 2020 @fossi-foundation
+- Vineet Jain, GSoC 2020 @fossi-foundation
+- Shivani Shah
