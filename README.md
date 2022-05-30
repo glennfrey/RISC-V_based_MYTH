@@ -35,7 +35,7 @@ Founder of RedwoodEDA Inc.
   * [Part 1: Pipelining the CPU](#Part1-Pipelining-the-CPU)
   * [Part 2: Load and store instructions and memory](#Part2-Load-and-store-instructions-and-memory)
   * [Part 3: Completing the RISC-V CPU](#Part3-Completing-the-RISC-V-CPU)
-  * [Part 4: Wrap-up and future opportunities](#Part4-Wrap-up-and-future-opportunities)
+  * [Acknowledgement](#Acknowledgement)
   
 ## Day1
 
@@ -142,16 +142,36 @@ Finally the answer is ```.ans ilp32 and rv32im``` as highlighted above.
 
 ## Day3
 ## Part1 Combinational logic in TL Verilog using Makerchip
+An introduction to TL-Verilog was done and we implemented basic combinational and sequential logic using the same.This day finally ended with an implementation of a sequential cyclic calculator. For this, Makerchip IDE, which is an open source tool developed by Redwood EDA has been utilised.
+
+TL-Verilog is an extension for System Verilog, moreover it acts as an higher level abstraction for System verilog which makes HDL implementation very easy and error free. Here we deal the design at a transaction level assuming the design as a pipeline, where inputs would be provided and output will be generated at the end of the pipeline.
+
+Advantages :
+
+Code reduction , and thus less chances of being bug prone.
+In pipelining ,the flip flops,registers and other staged signals are implied from the context.
+It is very easy to stage different sections without impacting the behaviour of the logic.
+Validity feature which provides easier debugging, cleaner design, automated clock gating and better error checking capabilities.
+
+In our first lab we implement basic inverter as shown below.
 ![](rvday3/rv-day3lab1inverter.png)
+We then implement 2 input logic. In my case I chose Adder logic as shown.
 ![](rvday3/rv-day3lab1and.png)
+Here we implement ternary operation for multiplexer.
 ![](rvday3/rv-day3lab1mux.png)
+We then move to arithmetic operation using vector signal as shown below.
 ![](rvday3/rv-day3lab1vector.png)
+Here we are task to demonstrate what we learn in the pas labs by implementing more complex combinational circuit like calculator as shown below.
 ![](rvday3/rv-day3lab1combinationalcalc.png)
 
 ## Part2 Sequential and pipelined logic
+Here we implement a counter using ternary operation and using flipflop.
 ![](rvday3/rv-day3lab1counter.png)
+We then implement the febonacci example which is very semilar to the counter we implement above.
 ![](rvday3/rv-day3lab1febonacciseq.png)
+Below screenshot is the lab for sequential calculator. We use what we learn about sequential logic and combinational logic to implement the lab.
 ![](rvday3/rv-day3lab2sequentialcalc.png)
+Here we are task to code the diagram as shown. Here I was able to replicate the diagram thanks to TL-verilog pipeline feature.
 ![](rvday3/rv-day3lab3counterandcalcpipeline.png)
 ![](rvday3/rv-day3lab3counterandcalcpipeline2.png)
 ![](rvday3/rv-day3lab3pipeline.png)
@@ -162,32 +182,101 @@ Finally the answer is ```.ans ilp32 and rv32im``` as highlighted above.
 ![](rvday3/rv-day3lab3validity_2cyclecalcwithvalidity.png)
 
 ## Day4
+
 ## Part1-Microarchitecture-and-testbench-for-a-simple-RISC-V-CPU
 
+After building up strong basics built in TL-Verilog and digital design, and getting completely familiar with the Makerchip Platform, it was time to move on to the core aspect of the workshop, i.e. to build a RISC V core. On this day , the following basic blocks were implemented :
+
+Program Counter (PC)
+Imem-Rd ( Instruction Memory)
+Instruction Decoder
+Register File Read
+Arithmatic Logic Unit (ALU)
+Register File Write
+Branch
 
 ## Part2-Fetch,-decode,-and-execute-logic
+##### Fetch
+The Program Counter (PC) holds the address of next Instruction
+The Instruction Memory (IM) holds the set of instructions to be executed
+During Fetch Stage, processor fetches the instruction from the IM pointed by address given by PC.
 
+Six types of Instructions of RISC-V
+
+R-type - Register
+I-type - Immediate
+S-type - Store
+B-type - Branch (Conditional Jump)
+U-type - Upper Immediate
+J-type - Jump (Unconditional Jump)
+
+The format of instruction includes Opcode, immediate value, source address, and destination address.
+
+##### Next PC
 ![](rvday4/rv-day3lab_nextpc.png)
+
+##### Fetch
 ![](rvday4/rv-day3lab_fetch.png)
+
+##### Decode
 ![](rvday4/rv-day3lab_decode.png)
 ![](rvday4/rv-day3lab_decodeviz.png)
 ![](rvday4/rv-day3lab_decodewaveform.png)
 
 ## Part3-RISC-V-control-logic
+
+The Register file performs to two read and one write simultaneously.
+
+Below is the input and output signal of File Refister.
+Inputs:
+
+Read_Enable - Enable signal to perform read operation
+Read_Address1 - Address1 from where data has to be read
+Read_Address2 - Address2 from where data has to be read
+Write_Enable - Enable signal to perform write operation
+Write_Address - Address where data has to be written
+Write_Data - Data to be written at Write_Address
+Outputs:
+
+Read_Data1 - Data from Read_Address1
+Read_Data2 - Data from Read_Address2
+
+During Decode Stage, branch target address is calculated and fed into PC mux. Before Execute Stage, once the operands are ready branch condition is checked.
+##### Register File Read and Write
 ![](rvday4/rv-day3lab_rfread.png)
 ![](rvday4/rv-day3lab_rfviz.png)
 ![](rvday4/rv-day3lab_rfwrite.png)
 ![](rvday4/rv-day3lab_write.png)
+##### Branch
 ![](rvday4/rv-day3lab_branch.png)
 
 ## Day5
 ## Part1-Pipelining-the-CPU
+Converting to non-pipelined to pipeline CPU can easily be done using TL-verilog.
+Below is the screenshot of pipeline CPU.
 ![](rvday5_pipeline.png)
 ![](rvday5_pipeline2.png)
 ## Part2-Load-and-store-instructions-and-memory
+The branch and load will have 3 cycle delay. I added Data Memory 1 write/read memory.
+
+Inputs:
+
+Read_Enable - Enable signal to perform read operation
+Write_Enable - Enable signal to perform write operation
+Address - Address specified whether to read/write from
+Write_Data - Data to be written on Address (Store Instruction)
+
+Output:
+
+Read_Data - Data to be read from Address (Load Instruction)
+
+Below is the screenshot of pipelined CPU with Memory
 ![](rvday5_loadstore.png)
 ![](rvday5_loadstore2.png)
 ## Part3-Completing-the-RISC-V-CPU
+This part of the labs I added Jumps and completed Instruction Decode and ALU for all instruction present in RV32I base integer instruction set.
+
+Below is Screenshot of Complete Pipelined RISC-V CPU.
 ![](rvday5/rv-day5diagram.png)
 ![](rvday5/rv-day5waveform.png)
 ![](rvday5/rv-day5waveform2.png)
@@ -197,8 +286,8 @@ Finally the answer is ```.ans ilp32 and rv32im``` as highlighted above.
 
 ## Acknowledgement
 
-Sir Steve Hoover
-Sir Kunal Ghosh
-Shivam Potdar
+Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.
+Steve Hoover, Founder, Redwood EDA
+Shivam Potdar, GSoC 2020 @fossi-foundation
+Vineet Jain, GSoC 2020 @fossi-foundation
 Shivani Shah
-VSD-IAT
