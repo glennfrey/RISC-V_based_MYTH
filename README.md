@@ -7,6 +7,8 @@ The Workshop is a 5-day basic to advance program that is design for fresher and 
 ### AUTHOR OF THE WORKSHOP
 #### Mr. Kunal Ghosh
 Co-founder of VLSI System Design (VSD) Corporation Private Limited
+#### Mr. Steve Hoover
+Founder of RedwoodEDA Inc.
 ### AGENDA
  [Day 1 : Introduction to RISC-V ISA and GNU compiler toolchain](#Day1)
   * [Part 1: Introduction to RISC-V basic keywords](#Part1-Introduction-to-RISC-V-basic-keywords)
@@ -139,35 +141,53 @@ Once your in the labs folder use command```chmod 777 rv32im.sh``` to acquire pre
 Finally the answer is ```.ans ilp32 and rv32im``` as highlighted above.
 
 ## Day3
-![](rvday3/rv-day3ass1q3.png)
-![](rvday3/rv-day3lab1and.png)
-![](rvday3/rv-day3lab1combinationalcalc.png)
-![](rvday3/rv-day3lab1counter.png)
-![](rvday3/rv-day3lab1febonacciseq.png)
+## Part1 Combinational logic in TL Verilog using Makerchip
 ![](rvday3/rv-day3lab1inverter.png)
+![](rvday3/rv-day3lab1and.png)
 ![](rvday3/rv-day3lab1mux.png)
 ![](rvday3/rv-day3lab1vector.png)
-![](rvday3/rv-day3lab1vector.png)
+![](rvday3/rv-day3lab1combinationalcalc.png)
+
+## Part2 Sequential and pipelined logic
+![](rvday3/rv-day3lab1counter.png)
+![](rvday3/rv-day3lab1febonacciseq.png)
+![](rvday3/rv-day3lab2sequentialcalc.png)
 ![](rvday3/rv-day3lab3counterandcalcpipeline.png)
 ![](rvday3/rv-day3lab3counterandcalcpipeline2.png)
 ![](rvday3/rv-day3lab3pipeline.png)
-![](rvday3/rv-day3lab3validity_2cyclecalcwithvalidity.png)
-![](rvday3/rv-day3lab3validity_calcwithcvmemory.png)
+
+## Part3-Validity
 ![](rvday3/rv-day3lab3validity_squareroot.png)
+![](rvday3/rv-day3lab3validity_calcwithcvmemory.png)
+![](rvday3/rv-day3lab3validity_2cyclecalcwithvalidity.png)
 
 ## Day4
-![](rvday4/rv-day3lab_branch.png)
+## Part1-Microarchitecture-and-testbench-for-a-simple-RISC-V-CPU
+
+
+## Part2-Fetch,-decode,-and-execute-logic
+
+![](rvday4/rv-day3lab_nextpc.png)
+![](rvday4/rv-day3lab_fetch.png)
 ![](rvday4/rv-day3lab_decode.png)
 ![](rvday4/rv-day3lab_decodeviz.png)
 ![](rvday4/rv-day3lab_decodewaveform.png)
-![](rvday4/rv-day3lab_fetch.png)
-![](rvday4/rv-day3lab_nextpc.png)
+
+## Part3-RISC-V-control-logic
 ![](rvday4/rv-day3lab_rfread.png)
 ![](rvday4/rv-day3lab_rfviz.png)
 ![](rvday4/rv-day3lab_rfwrite.png)
 ![](rvday4/rv-day3lab_write.png)
+![](rvday4/rv-day3lab_branch.png)
 
 ## Day5
+## Part1-Pipelining-the-CPU
+![](rvday5_pipeline.png)
+![](rvday5_pipeline2.png)
+## Part2-Load-and-store-instructions-and-memory
+![](rvday5_loadstore.png)
+![](rvday5_loadstore2.png)
+## Part3-Completing-the-RISC-V-CPU
 ![](rvday5/rv-day5diagram.png)
 ![](rvday5/rv-day5waveform.png)
 ![](rvday5/rv-day5waveform2.png)
@@ -175,3 +195,10 @@ Finally the answer is ```.ans ilp32 and rv32im``` as highlighted above.
 ![](rvday5/rv-day5waveform4.png)
 ![](rvday5/rvday5viz.gif)
 
+## Acknowledgement
+
+Sir Steve Hoover
+Sir Kunal Ghosh
+Shivam Potdar
+Shivani Shah
+VSD-IAT
